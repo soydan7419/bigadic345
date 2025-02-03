@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Benim Hakkımda</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: url('arka-plan.jpg') no-repeat center center fixed;
+            background-size: cover;
+            color: white;
+            text-align: center;
+        }
+        .container, .hobbies-container {
+            padding: 50px;
+            background: rgba(0, 0, 0, 0.6);
+            border-radius: 15px;
+            display: block;
+            margin: 50px auto;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+            width: 70%;
+            text-align: center;
+        }
+        img {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            margin-top: 20px;
+            border: 4px solid white;
+        }
+        .slider-container {
+            width: 100%;
+            overflow: hidden;
+            position: relative;
+            margin-top: 20px;
+            white-space: nowrap;
+        }
+        .slider {
+            display: flex;
+            gap: 10px;
+            animation: slide 15s linear infinite;
+            width: calc(200px * 18 + 180px);
+            justify-content: center;
+        }
+        .slider img {
+            width: 200px;
+            height: 200px;
+            border-radius: 10px;
+        }
+        @keyframes slide {
+            0% { transform: translateX(0); }
+            100% { transform: translateX(-50%); }
+        }
+        .hobbies-gallery {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 15px;
+            justify-items: center;
+            align-items: center;
+            margin-top: 20px;
+        }
+        .hobbies-gallery img {
+            width: 180px;
+            height: 150px;
+            border-radius: 10px;
+            transition: transform 0.3s;
+        }
+        .hobbies-gallery img:hover {
+            transform: scale(1.1);
+        }
+        .extra-videos {
+            margin-top: 30px;
+        }
+        .extra-videos video {
+            width: 320px;
+            height: 240px;
+            margin: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Bigadic Gercek Damat Adayi</h1>
+        <img src="benim-resmim.jpg" alt="Benim Resmim">
+        <p>Merhaba! Ben Alperen Soydan, 23 yaşındayım ve Meslegim bilgisayar ogretmenligi, hobilerim balik bakmak, yemek yapmak, temizlik yapmak, bigadic hakkinda bilgiler ogrenmek bu konularla ilgileniyorum. Hayatta en sevdiğim şeylerden biri yuruyus yapmak. Web geliştirme, tasarım ve yaratıcı projeler benim ilgi alanlarım arasında. Daha fazla bilgi için benimle iletişime geçebilirsiniz!</p>
+    
+        <div class="video-container">
+            <video width="320" height="240" controls>
+                <source src="video.mp4" type="video/mp4">
+                Tarayıcınız video etiketini desteklemiyor.
+            </video>
+        </div>
+        
+        <div class="audio-container">
+            <audio controls autoplay loop>
+                <source src="sarki.mp3" type="audio/mp3">
+                Tarayıcınız ses etiketini desteklemiyor.
+            </audio>
+        </div>
+        
+        <div class="slider-container">
+            <div class="slider">
+                <img src="resim1.jpg" alt="Resim 1">
+                <img src="resim2.jpg" alt="Resim 2">
+                <img src="resim3.jpg" alt="Resim 3">
+                <img src="resim4.jpg" alt="Resim 4">
+                <img src="resim5.jpg" alt="Resim 5">
+                <img src="resim6.jpg" alt="Resim 6">
+                <img src="resim7.jpg" alt="Resim 7">
+                <img src="resim8.jpg" alt="Resim 8">
+                <img src="resim9.jpg" alt="Resim 9">
+            </div>
+        </div>
+        
+        <div class="hobbies-container">
+            <h2>Hobilerim</h2>
+            <div class="hobbies-gallery">
+                <img src="hobi1.jpg" alt="Hobi 1">
+                <img src="hobi2.jpg" alt="Hobi 2">
+                <img src="hobi3.jpg" alt="Hobi 3">
+                <img src="hobi4.jpg" alt="Hobi 4">
+                <img src="hobi5.jpg" alt="Hobi 5">
+                <img src="hobi6.jpg" alt="Hobi 6">
+                <img src="hobi7.jpg" alt="Hobi 7">
+                <img src="hobi8.jpg" alt="Hobi 8">
+                <img src="hobi9.jpg" alt="Hobi 9">
+                <img src="hobi10.jpg" alt="Hobi 10">
+                <img src="hobi11.jpg" alt="Hobi 11">
+                <img src="hobi12.jpg" alt="Hobi 12">
+            </div>
+        </div>
+        
+        <div class="extra-videos">
+            <video controls>
+                <source src="video2.mp4" type="video/mp4">
+                Tarayıcınız video etiketini desteklemiyor.
+            </video>
+            <video controls>
+                <source src="video3.mp4" type="video/mp4">
+                Tarayıcınız video etiketini desteklemiyor.
+            </video>
+        </div>
+        
+        <div class="social-links">
+            <a href="https://www.instagram.com/alperensydn" target="_blank">
+                <img src="instagram-logo.png" alt="Instagram">
+            </a>
+            <a href="https://www.facebook.com/Alperen Soydan" target="_blank">
+                <img src="facebook-logo.png" alt="Facebook">
+            </a>
+            <a href="https://wa.me/400771332707" target="_blank">
+                <img src="whatsapp-logo.png" alt="WhatsApp">
+            </a>
+        </div>
+    </div>
+</body>
+</html>
